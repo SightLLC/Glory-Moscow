@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>Glory Moscow</title>
+	</head>
+	<body class="profile">
+		<header class="main-header profile">
+			<div class="container">
+				<nav class="main-nav">
+					<ul class="menu clearfix">
+						<li class="main">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="acquaintance">
+							<a href="search.html">Знакомства</a>
+						</li>
+						<li class="about active">
+							<a href="about.html">О Glory Moscow</a>
+						</li>
+						<div class="user-block">
+							<div class="logged-out show">
+								<li class="registration">
+									<a href="#" class="sign-up-btn js-open-form-button js-close-form-button">Регистрация</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="sign-in-btn js-open-form-button js-close-form-button">Вход</a>
+								</li>
+							</div>
+							<div class="logged-in hide">
+								<li class="user-account">
+									<a href="#">
+									<div class="user-avatar">
+										<img src="img/icon61.png" width=40px height=40px alt="user avatar">
+									</div>
+										Личный кабинет
+									</a>
+								</li>
+							</div>
+						</div>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="container clearfix profile">
+			<h1 class="page-title profile">Мой профиль</h1>
+			<section class="account">
+				<div class="avatar">
+					<img src="img/icon5.png"></img>
+				</div>
+				<div class="nickname">
+					Nickname
+				</div>
+					<div class="statistics">
+						<div class="statistics-item">
+							<span class="statistics-title">Предложения мне</span>
+							<div class="statistics-number js-stat-form-button">
+								<a href="#">1</a>
+							</div>
+							<section class="my-offers no-display js-protect-from-auto-closure js-stat-form-window" id="firstStatSection">
+								<div class="meetings-scroller">
+									<article class="my-offers-item">
+										<div class="offer-body clearfix">
+											<div class="offers-avatar">
+												<img src="img/icon3.png" width=60px height=60px >
+											</div>
+											<div class="offer-text">
+												<p>Пользователь <span class="user-name">UserName</span><br>
+												хочет назначить вам встречу</p>
+												<p class="offer-time">
+													Чт, 5 октября, 2016 года в 16:00
+												</p>
+											</div>
+										</div>
+										<div class="offer-buttons clearfix">
+											<button class="offer-button accept">Принять</button>
+											<button class="offer-button decline">Отклонить</button>
+										</div>
+									</article>
+									<article class="my-offers-item">
+										<div class="offer-body clearfix">
+											<div class="offers-avatar">
+												<img src="img/icon3.png" width=60px height=60px >
+											</div>
+											<div class="offer-text">
+												<p>Пользователь <span class="user-name">UserName</span><br>
+												хочет назначить вам встречу</p>
+												<p class="offer-time">
+													Чт, 5 октября, 2016 года в 16:00
+												</p>
+											</div>
+										</div>
+										<div class="offer-buttons clearfix">
+											<button class="offer-button accept">Принять</button>
+											<button class="offer-button decline">Отклонить</button>
+										</div>
+									</article>
+								</div>
+							</section>
+						</div>
+						<div class="statistics-item">
+							<span class="statistics-title">Мои предложения (активные)</span>
+							<div class="statistics-number js-stat-form-button">
+								<a href="#">
+									2
+								</a>
+							</div>
+							<section class="active-offers js-protect-from-auto-closure js-stat-form-window no-display" id="secondStatSection">
+								<div class="active-offers-title">
+									Ожидают подтверждения
+								</div>
+								<div class="meetings-scroller">
+									<article class="active-offers-item">
+										<div class="active-offer-body clearfix">
+											<div class="offers-avatar">
+												<img src="img/icon3.png" width=60px height=60px>
+											</div>
+											<div class="offer-text active">
+												<p class="active-user">UserName</p>
+												<p class="offer-time">
+													Чт, 5 октября, 2016 года в 16:00
+												</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</section>
+						</div>
+						<div class="statistics-item">
+							<span class="statistics-title">Мои предложения (принятые)</span>
+							<div class="statistics-number js-stat-form-button">
+								<a href="#">
+									4
+								</a>
+							</div>
+							<section class="active-offers js-protect-from-auto-closure js-stat-form-window no-display" id="thirdStatSection">
+								<div class="active-offers-title">
+										Принятые встречи
+								</div>
+								<div class="meetings-scroller">
+									<article class="active-offers-item js-upcoming-meeting">
+										<div class="active-offer-body clearfix">
+											<div class="offers-avatar">
+												<img src="img/icon3.png" width=60px height=60px>
+											</div>
+											<div class="offer-text active">
+												<p class="active-user">UserName</p>
+												<p class="offer-time passed">
+													Чт, 5 октября, 2016 года в 16:00
+												</p>
+											</div>
+										</div>
+										<button class="cancel-meeting-button">
+											Отменить
+										</button>
+									</article>
+									<article class="active-offers-item js-upcoming-meeting">
+										<div class="active-offer-body clearfix">
+											<div class="offers-avatar">
+												<img src="img/icon3.png" width=60px height=60px>
+											</div>
+											<div class="offer-text active">
+												<p class="active-user">UserName</p>
+												<p class="offer-time passed">
+													Чт, 5 октября, 2016 года в 16:00
+												</p>
+											</div>
+										</div>
+										<button class="cancel-meeting-button">
+											Отменить
+										</button>
+									</article>
+								</div>
+							</section>
+						</div>
+						<div class="statistics-item">
+							<span class="statistics-title">Проведено встреч</span>
+							<div class="statistics-number js-stat-form-button">
+								<a href="#">
+									2
+								</a>
+							</div>
+							<section class="active-offers js-protect-from-auto-closure js-stat-form-window no-display" id="forthStatSection">
+								<article class="active-offers-item">
+									<div class="active-offers-title">
+										Прошедшие встречи
+									</div>
+									<div class="meetings-scroller">
+										<div class="active-offer-body clearfix">
+											<div class="offers-avatar">
+												<img src="img/icon3.png" width=60px height=60px>
+											</div>
+											<div class="offer-text active">
+												<p class="active-user">UserName</p>
+												<p class="offer-time passed">
+													Чт, 5 октября, 2016 года в 16:00
+												</p>
+											</div>
+										</div>
+										<div class="active-offer-body clearfix">
+											<div class="offers-avatar">
+												<img src="img/icon3.png" width=60px height=60px>
+											</div>
+											<div class="offer-text active">
+												<p class="active-user">UserName</p>
+												<p class="offer-time passed">
+													Чт, 5 октября, 2016 года в 16:00
+												</p>
+											</div>
+										</div>
+										<div class="active-offer-body clearfix">
+											<div class="offers-avatar">
+												<img src="img/icon3.png" width=60px height=60px>
+											</div>
+											<div class="offer-text active">
+												<p class="active-user">UserName</p>
+												<p class="offer-time passed">
+													Чт, 5 октября, 2016 года в 16:00
+												</p>
+											</div>
+										</div>
+										<div class="active-offer-body clearfix">
+											<div class="offers-avatar">
+												<img src="img/icon3.png" width=60px height=60px>
+											</div>
+											<div class="offer-text active">
+												<p class="active-user">UserName</p>
+												<p class="offer-time passed">
+													Чт, 5 октября, 2016 года в 16:00
+												</p>
+											</div>
+										</div>
+										<div class="active-offer-body clearfix">
+											<div class="offers-avatar">
+												<img src="img/icon3.png" width=60px height=60px>
+											</div>
+											<div class="offer-text active">
+												<p class="active-user">UserName</p>
+												<p class="offer-time passed">
+													Чт, 5 октября, 2016 года в 16:00
+												</p>
+											</div>
+										</div>
+									</div>
+								</article>
+							</section>
+						</div>
+					</div>
+			</section>
+			<section class="settings clearfix">
+				<select class="iwant">
+				</select>
+				<select class="age">
+				</select>
+				<select class="figure">
+				</select>
+				<select class="cut">
+				</select>
+				<select class="length">
+				</select>
+				<textarea class="additional-info"></textarea>
+				<div class="buttons">
+					<button class="save">Сохранить</button>
+					<button class="edit">Редактировать</button>
+				</div>
+			</section>
+			<section class="calendar clearfix">
+				<div class="title">
+					Удобное время встреч
+				</div>
+				<div class="border-maker clearfix">
+					<div class="first month">
+						<div class="big-simbols">
+							<div class="weekday-and-month">
+								<span>
+									Friday<br>
+									April 2016
+								</span>
+							</div>
+							<div class="day">
+								14
+							</div>
+							<div class="previous-meeting"></div>
+							<div class="next-meeting"></div>
+						</div>
+						<div class="days">
+							<table class="month-data">
+								<tr class="weekdays">
+									<td><span>M</span></td>
+									<td><span>T</span></td>
+									<td><span>W</span></td>
+									<td><span>T</span></td>
+									<td><span>F</span></td>
+									<td><span>S</span></td>
+									<td><span>S</span></td>
+								</tr>
+								<tr>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">27</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">28</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">29</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">30</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">31</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">1</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">2</button></td>
+								</tr>
+								<tr>
+									<td class="current-month"><button class="one-day" data-dayNumber="">3</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">4</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">5</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">6</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">7</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">8</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">9</button></td>
+								</tr>
+								<tr>
+									<td class="current-month"><button class="one-day" data-dayNumber="">10</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">11</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">12</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">13</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">14</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">15</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">16</button></td>
+								</tr>
+								<tr>
+									<td class="current-month"><button class="one-day" data-dayNumber="">17</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">18</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">19</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">20</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">21</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">22</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">23</button></td>
+								</tr>
+								<tr>
+									<td class="current-month"><button class="one-day" data-dayNumber="">24</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">25</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">26</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">27</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">28</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">29</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">30</button></td>
+								</tr>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">1</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">2</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">3</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">4</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">5</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">6</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">7</button></td>
+							</table>
+						</div>
+					</div>
+					<div class="second month">
+						<div class="big-simbols">
+							<div class="weekday-and-month">
+								<span>
+									Wednesday<br>
+									May 2016
+								</span>
+							</div>
+							<div class="day">
+								10
+							</div>
+							<div class="previous-meeting"></div>
+							<div class="next-meeting"></div>
+						</div>
+						<div class="days">
+							<table class="month-data">
+								<tr class="weekdays">
+									<td><span>M</span></td>
+									<td><span>T</span></td>
+									<td><span>W</span></td>
+									<td><span>T</span></td>
+									<td><span>F</span></td>
+									<td><span>S</span></td>
+									<td><span>S</span></td>
+								</tr>
+								<tr>
+									<td class="current-month"><button class="one-day" data-dayNumber="1">1</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="2">2</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="3">3</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="4">4</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="5">5</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="6">6</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="7">7</button></td>
+								</tr>
+								<tr>
+									<td class="current-month"><button class="one-day" data-dayNumber="8">8</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="9">9</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="10">10</button></td>
+									<td class="current-month"><button class="one-day today" data-dayNumber="11">11</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="12">12</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="13">13</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="14">14</button></td>
+								</tr>
+								<tr>
+									<td class="current-month"><button class="one-day" data-dayNumber="15">15</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="16">16</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="17">17</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="18">18</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="19">19</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="20">20</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="21">21</button></td>
+								</tr>
+								<tr>
+									<td class="current-month"><button class="one-day" data-dayNumber="22">22</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="23">23</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="24">24</button></td>
+									<td class="current-month"><button class="one-day active" data-dayNumber="25">25</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="26">26</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="27">27</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="28">28</button></td>
+								</tr>
+								<tr>
+									<td class="current-month"><button class="one-day" data-dayNumber="29">29</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="30">30</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="31">31</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="1">1</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="2">2</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="3">3</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="4">4</button></td>
+								</tr>
+								<tr>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="5">5</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="6">6</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="7">7</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="8">8</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="9">9</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="10">10</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="11">11</button></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="third month">
+						<div class="big-simbols">
+							<div class="weekday-and-month">
+								<span>
+									Sunday<br>
+									June 2016
+								</span>
+							</div>
+							<div class="day">
+								25
+							</div>
+							<div class="previous-meeting"></div>
+							<div class="next-meeting"></div>
+						</div>
+						<div class="days">
+							<table class="month-data">
+								<tr class="weekdays">
+									<td><span>M</span></td>
+									<td><span>T</span></td>
+									<td><span>W</span></td>
+									<td><span>T</span></td>
+									<td><span>F</span></td>
+									<td><span>S</span></td>
+									<td><span>S</span></td>
+								</tr>
+								<tr>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">29</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">30</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">31</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">1</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">2</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">3</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">4</button></td>
+								</tr>
+								<tr>
+									<td class="current-month"><button class="one-day" data-dayNumber="">5</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">6</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">7</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">8</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">9</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">10</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">11</button></td>
+								</tr>
+								<tr>
+									<td class="current-month"><button class="one-day" data-dayNumber="">12</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">13</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">14</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">15</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">16</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">17</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">18</button></td>
+								</tr>
+								<tr>
+									<td class="current-month"><button class="one-day" data-dayNumber="">19</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">20</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">21</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">22</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">23</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">24</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">25</button></td>
+								</tr>
+								<tr>
+									<td class="current-month"><button class="one-day" data-dayNumber="">26</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">27</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">28</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">29</button></td>
+									<td class="current-month"><button class="one-day" data-dayNumber="">30</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">1</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">2</button></td>
+								</tr>
+								<tr>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">3</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">4</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">5</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">6</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">7</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">8</button></td>
+									<td class="not-current-month"><button class="one-day" data-dayNumber="">9</button></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="sign-up-window no-display js-window">
+			<a class="close-window js-close-form-button" href="#">
+				<div class="left-top"></div>
+				<div class="right-top"></div>
+			</a>
+			<form>
+				<input type="text" value="Логин" name="login" data-name="Логин" class="user-info">
+				<input type="text" value="Пароль" name="password" data-name="Пароль" class="user-info">
+				<input type="text" value="Почта" name="email" data-name="Почта" class="user-info">
+				<input type="submit" class="sign-up-btn" value="Регистрация">
+			</form>
+		</div>
+		<div class="sign-in-window no-display js-window">
+			<a class="close-window js-close-form-button" href="#">
+				<div class="left-top"></div>
+				<div class="right-top"></div>
+			</a>
+			<form>
+				<input type="text" value="Логин" name="login" data-name="Логин" class="user-info">
+				<input type="text" value="Пароль" name="password" data-name="Пароль" class="user-info">
+				<input type="submit" class="login-btn" value="Войти">
+				<a class="remember-password js-open-form-button js-close-form-button" href="#">Не помню пароль</a>
+			</form>
+		</div>
+		<div class="forgot-password-window no-display js-window">
+			<a class="close-window js-close-form-button" href="#">
+				<div class="left-top"></div>
+				<div class="right-top"></div>
+			</a>
+			<form>
+				<input type="text" value="Почта" name="FPemail" data-name="Почта" class="user-info">
+				<input type="submit" class="forgot-password-btn" value="Напомнить пароль">
+			</form>
+		</div>
+		<div class="time-window js-window no-display">
+			<div class="window-title">
+				Выберите время
+			</div>
+			<div class="day-half am"></div>
+			<div class="day-half pm no-display"></div>
+			<form class="date-and-time-inputs">
+				<div class="hour-am">
+					<label for="six-seven">6:00 - 7:00</label>
+					<input type="checkbox" id="six-seven">
+				</div>
+				<div class="hour-am">
+					<label for="seven-eight">7:00 - 8:00</label>
+					<input type="checkbox" id="seven-eight">
+				</div>
+				<div class="hour-am">
+					<label for="eight-nine">8:00 - 9:00</label>
+					<input type="checkbox" id="eight-nine">
+				</div>
+				<div class="hour-am">
+					<label for="nine-ten">9:00 - 10:00</label>
+					<input type="checkbox" id="nine-ten">
+				</div>
+				<div class="hour-am">
+					<label for="ten-eleven">10:00 - 11:00</label>
+					<input type="checkbox" id="ten-eleven">
+				</div>
+				<div class="hour-am">
+					<label for="eleven-twelve">11:00 - 12:00</label>
+					<input type="checkbox" id="eleven-twelve">
+				</div>
+				<div class="hour-am">
+					<label for="twelve-thirteen">12:00 - 13:00</label>
+					<input type="checkbox" id="twelve-thirteen">
+				</div>
+				<div class="hour-am">
+					<label for="thirteen-forteen">13:00 - 14:00</label>
+					<input type="checkbox" id="thirteen-forteen">
+				</div>
+				<div class="hour-am">
+					<label for="forteen-fifteen">14:00 - 15:00</label>
+					<input type="checkbox" id="forteen-fifteen">
+				</div>
+				<div class="hour-am">
+					<label for="fifteen-sixteen">15:00 - 16:00</label>
+					<input type="checkbox" id="fifteen-sixteen">
+				</div>
+				<div class="hour-am">
+					<label for="sixteen-seventeen">16:00 - 17:00</label>
+					<input type="checkbox" id="sixteen-seventeen">
+				</div>
+				<div class="hour-am">
+					<label for="seventeen-eightteen">17:00 - 18:00</label>
+					<input type="checkbox" id="seventeen-eightteen">
+				</div>
+				<div class="hour-pm no-display">
+					<label for="eightteen-nineteen">18:00 - 19:00</label>
+					<input type="checkbox" id="eightteen-nineteen">
+				</div>
+				<div class="hour-pm no-display">
+					<label for="nineteen-twenty">19:00 - 20:00</label>
+					<input type="checkbox" id="nineteen-twenty">
+				</div>
+				<div class="hour-pm no-display">
+					<label for="twenty-twenty-one">20:00 - 21:00</label>
+					<input type="checkbox" id="twenty-twenty-one">
+				</div>
+				<div class="hour-pm no-display">
+					<label for="twenty-one-twenty-two">21:00 - 22:00</label>
+					<input type="checkbox" id="twenty-one-twenty-two">
+				</div>
+				<div class="hour-pm no-display">
+					<label for="twenty-two-twenty-tree">22:00 - 23:00</label>
+					<input type="checkbox" id="twenty-two-twenty-tree">
+				</div>
+				<div class="hour-pm no-display">
+					<label for="twenty-tree-zero">23:00 - 00:00</label>
+					<input type="checkbox" id="twenty-tree-zero">
+				</div>
+				<div class="hour-pm no-display">
+					<label for="zero-one">00:00 - 01:00</label>
+					<input type="checkbox" id="zero-one">
+				</div>
+				<div class="hour-pm no-display">
+					<label for="one-two">01:00 - 02:00</label>
+					<input type="checkbox" id="one-two">
+				</div>
+				<div class="hour-pm no-display">
+					<label for="two-three">02:00 - 03:00</label>
+					<input type="checkbox" id="two-three">
+				</div>
+				<div class="hour-pm no-display">
+					<label for="three-four">03:00 - 04:00</label>
+					<input type="checkbox" id="three-four">
+				</div>
+				<div class="hour-pm no-display">
+					<label for="four-five">04:00 - 05:00</label>
+					<input type="checkbox" id="four-five">
+				</div>
+				<div class="hour-pm no-display">
+					<label for="five-six">05:00 - 06:00</label>
+					<input type="checkbox" id="five-six">
+				</div>
+			</form>
+			<div class="save-button-container">
+				<button class="save-button">Сохранить</button>
+			</div>
+		</div>
+	<div class="timeChooseFlag" data-variable=1></div>
+	<script>
+		var dayChooseWindowFlag = document.querySelector(".timeChooseFlag").dataset.variable;
+		var dayChooseWindow = document.querySelector(".time-window.js-window");
+		if (dayChooseWindowFlag && dayChooseWindow){
+			if (dayChooseWindowFlag != 0) {
+				if (dayChooseWindow.classList.contains("no-display")){
+					dayChooseWindow.classList.remove("no-display")
+				};
+			};
+		};
+	</script>
+	<script src="js/loginWindow.js"></script>
+	<script src="js/meetingDelete.js"></script>
+	<script src="js/halfOfTheDay.js"></script>
+	</body>
+</html>

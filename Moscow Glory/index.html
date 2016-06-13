@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>Glory Moscow</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<nav class="main-nav">
+					<ul class="menu clearfix">
+						<li class="acquaintance">
+							<a href="search.html">Знакомства</a>
+						</li>
+						<li class="about">
+							<a href="about.html">О Glory Moscow</a>
+						</li>
+						<div class="user-block">
+							<div class="logged-out show">
+								<li class="registration">
+									<a href="#" class="sign-up-btn js-open-form-button js-close-form-button">Регистрация</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="sign-in-btn js-open-form-button js-close-form-button">Вход</a>
+								</li>
+							</div>
+							<div class="logged-in hide">
+								<li class="user-account">
+									<a href="#">
+									<div class="user-avatar">
+										<img src="img/icon61.png" width=40px height=40px alt="user avatar">
+									</div>
+										Личный кабинет
+									</a>
+								</li>
+							</div>
+						</div>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="container">
+			<h1 class="site-title">
+				Знакомства для анонимного, безопасного и доступного секса в Москве
+			</h1>
+			<form class="search">
+				<a href="#" class="search-btn">Найти партнера</a>
+				<select name="i-want">
+					<option value="">Я хочу</option>
+					<option value="ass-fuck">Выебать в жопу</option>
+					<option value="ass-be-fucked">Дать в жопу</option>
+					<option value="suck">Отсосать</option>
+					<option value="be-sucked">Чтобы мне отсосали</option>
+					<option value="ass-to-mouth">Из попки в ротик</option>
+				</select>
+				<select name="status">
+					<option value="">Статус</option>
+					<option value="new">Новеньких</option>
+					<option value="old">Бывалых</option>
+				</select>
+			</form>
+		</main>
+		<div class="sign-up-window no-display js-window">
+			<a class="close-window js-close-form-button" href="#">
+				<div class="left-top"></div>
+				<div class="right-top"></div>
+			</a>
+			<form>
+				<input type="text" value="Логин" name="login" data-name="Логин" class="user-info">
+				<input type="text" value="Пароль" name="password" data-name="Пароль" class="user-info">
+				<input type="text" value="Почта" name="email" data-name="Почта" class="user-info">
+				<input type="submit" class="sign-up-btn" value="Регистрация">
+			</form>
+		</div>
+		<div class="sign-in-window no-display js-window">
+			<a class="close-window js-close-form-button" href="#">
+				<div class="left-top"></div>
+				<div class="right-top"></div>
+			</a>
+			<form>
+				<input type="text" value="Логин" name="login" data-name="Логин" class="user-info">
+				<input type="text" value="Пароль" name="password" data-name="Пароль" class="user-info">
+				<input type="submit" class="login-btn" value="Войти">
+				<a class="remember-password js-open-form-button js-close-form-button" href="#">Не помню пароль</a>
+			</form>
+		</div>
+		<div class="forgot-password-window no-display js-window">
+			<a class="close-window js-close-form-button" href="#">
+				<div class="left-top"></div>
+				<div class="right-top"></div>
+			</a>
+			<form>
+				<input type="text" value="Почта" name="FPemail" data-name="Почта" class="user-info">
+				<input type="submit" class="forgot-password-btn" value="Напомнить пароль">
+			</form>
+		</div>
+	<script src="js/loginWindow.js"></script>
+	<!--<script src="js/signup.js"></script>-->
+	</body>
+</html>

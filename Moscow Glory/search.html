@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>Glory Moscow</title>
+	</head>
+	<body class="search">
+		<header class="main-header profile about">
+			<div class="container">
+				<nav class="main-nav">
+					<ul class="menu clearfix">
+						<li class="main">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="acquaintance">
+							<a>Знакомства</a>
+						</li>
+						<li class="about active">
+							<a href="about.html">О Glory Moscow</a>
+						</li>
+						<div class="user-block">
+							<div class="logged-out show">
+								<li class="registration">
+									<a href="#" class="sign-up-btn js-open-form-button js-close-form-button">Регистрация</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="sign-in-btn js-open-form-button js-close-form-button">Вход</a>
+								</li>
+							</div>
+							<div class="logged-in hide">
+								<li class="user-account">
+									<a href="#">
+									<div class="user-avatar">
+										<img src="img/icon61.png" width=40px height=40px alt="user avatar">
+									</div>
+										Личный кабинет
+									</a>
+								</li>
+							</div>
+						</div>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="search container clearfix">
+			<div class="left-part">
+				<form class="simple-search">
+					<div class="I-want">
+						<span class="filter-title">Я хочу</span>
+						<div class="btn">
+							<input type="checkbox" name="want-anal-active" class="js-search-buttons">
+							<label for="want-anal-active">Анал актив</label>
+						</div>
+						<div class="btn">
+							<input type="checkbox" name="want-anal-passive" class="js-search-buttons">
+							<label for="want-anal-passive">Анал пассив</label>
+						</div>
+						<div class="btn">
+							<input type="checkbox" name="want-oral-active" class="js-search-buttons">
+							<label for="want-oral-active">Орал актив</label>
+						</div>
+						<div class="btn">
+							<input type="checkbox" name="want-oral-passive" class="js-search-buttons">
+							<label for="want-oral-passive">Орал пассив</label>
+						</div>
+					</div>
+					<div class="status">
+						<span class="filter-title">Статус</span>
+						<label for="new">Новые</label>
+						<input type="checkbox" class="filter-checkbox" id="new">
+						<label for="old">Активные</label>
+						<input type="checkbox" class="filter-checkbox" id="old">
+					</div>
+					<button class="submit-btn">Начать поиск</button>
+				</form>
+				<section class="result">
+					<article class="result-item">
+						<div class="js-open-meeting-window">
+							<div class="avatar"></div>
+							<div class="nickname">Nickname1</div>
+						</div>
+						<div class="meeting-choose no-display" id="first-search-result">
+							<div class="meeting-choose-title js-protect-from-auto-closure">Приглашение</div>
+							<div class="meeting-var-item js-protect-from-auto-closure">
+								<label for="first-var">4 июня 2016, 15:00</label>
+								<input type="checkbox" id="first-var">
+							</div>
+							<div class="meeting-var-item js-protect-from-auto-closure">
+								<label for="second-var">5 июня 2016, 15:00</label>
+								<input type="checkbox" id="first-var">
+							</div>
+							<button class="send-invitation">Отправить приглашение</button>
+						</div>
+					</article>
+					<article class="result-item">
+						<div class="js-open-meeting-window">
+							<div class="avatar"></div>
+							<div class="nickname">Nickname</div>
+						</div>
+						<div class="meeting-choose no-display" id="second-search-result">
+							<div class="meeting-choose-title js-protect-from-auto-closure">Приглашение</div>
+							<div class="meeting-var-item js-protect-from-auto-closure">
+								<label for="first-var">6 июня 2016, 15:00</label>
+								<input type="checkbox" id="first-var">
+							</div>
+							<div class="meeting-var-item js-protect-from-auto-closure">
+								<label for="second-var">7 июня 2016, 15:00</label>
+								<input type="checkbox" id="first-var">
+							</div>
+							<button class="send-invitation">Отправить приглашение</button>
+						</div>
+					</article>
+				</section>
+			</div>
+			<form class="right-part">
+				<div class="filter-title">
+					Расширенный поиск
+				</div>
+				<div class="paddings-maker">
+					<div class="filter-sub-title">
+						Возраст
+					</div>
+					<div class="age filter-toggle">
+						<div class="bar"></div>
+						<div class="selected-range"></div>
+						<div class="toggle toggle-left" draggable="true">
+							<span class="toggle-label">18</span>
+							<input type="text" class="js-toggles" name="age-left-toggle">
+						</div>
+						<div class="toggle toggle-right">
+							<span class="toggle-label">27</span>
+							<input type="text" class="js-toggles" name="age-right-toggle">
+						</div>
+					</div>
+					<div class="filter-sub-title">
+						Тип фигуры
+					</div>
+					<div class="filter-parameters">
+						<div class="case">
+							<input type="checkbox" class="filter-checkbox" id="skinny">
+							<label for="skinny">Стройная</label>
+						</div>
+						<div class="case">
+							<input type="checkbox" class="filter-checkbox" id="fat">
+							<label for="fat">Полная</label>
+						</div>
+					</div>
+					<div class="filter-sub-title">
+						Интимная стрижка
+					</div>
+					<div class="filter-parameters">
+						<div class="case">
+							<input type="checkbox" class="filter-checkbox" id="shaved">
+							<label for="shaved">Бритый</label>
+						</div>
+						<div class="case">
+							<input type="checkbox" class="filter-checkbox" id="hairy">
+							<label for="hairy">Небритый</label>
+						</div>
+					</div>
+					<div class="filter-sub-title">Длина в эррегированном состоянии</div>
+					<div class="length filter-toggle">
+						<div class="bar"></div>
+						<div class="selected-range"></div>
+						<div class="toggle toggle-left">
+							<span class="toggle-label">14</span>
+							<input type="text" class="js-toggles" name="length-left-toggle">
+						</div>
+						<div class="toggle toggle-right">
+							<span class="toggle-label">20</span>
+							<input type="text" class="js-toggles" name="length-right-toggle">
+						</div>
+					</div>
+				</div>
+				<button href="#" class="filter-submit">
+					Применить
+				</button>
+			</form>
+		</main>
+		<div class="sign-up-window no-display js-window">
+			<a class="close-window js-close-form-button" href="#">
+				<div class="left-top"></div>
+				<div class="right-top"></div>
+			</a>
+			<form>
+				<input type="text" value="Логин" name="login" data-name="Логин" class="user-info">
+				<input type="text" value="Пароль" name="password" data-name="Пароль" class="user-info">
+				<input type="text" value="Почта" name="email" data-name="Почта" class="user-info">
+				<input type="submit" class="sign-up-btn" value="Регистрация">
+			</form>
+		</div>
+		<div class="sign-in-window no-display js-window">
+			<a class="close-window js-close-form-button" href="#">
+				<div class="left-top"></div>
+				<div class="right-top"></div>
+			</a>
+			<form>
+				<input type="text" value="Логин" name="login" data-name="Логин" class="user-info">
+				<input type="text" value="Пароль" name="password" data-name="Пароль" class="user-info">
+				<input type="submit" class="login-btn" value="Войти">
+				<a class="remember-password js-open-form-button js-close-form-button" href="#">Не помню пароль</a>
+			</form>
+		</div>
+		<div class="forgot-password-window no-display js-window">
+			<a class="close-window js-close-form-button" href="#">
+				<div class="left-top"></div>
+				<div class="right-top"></div>
+			</a>
+			<form>
+				<input type="text" value="Почта" name="FPemail" data-name="Почта" class="user-info">
+				<input type="submit" class="forgot-password-btn" value="Напомнить пароль">
+			</form>
+		</div>
+		<script src="js/togglerAge.js"></script>
+		<script src="js/togglerLength.js"></script>
+		<script src="js/loginWindow.js"></script>
+		<script src="js/filterButtons.js"></script>
+	</body>
+</html>
