@@ -1,0 +1,118 @@
+/* Реколлбар Start */
+#recallbar {
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+#recallbar a span {
+	margin: 0 0 0 5px;
+}
+#recallbar ul li {
+    float: left;
+    line-height: 1;
+    list-style: none;
+    margin: 0;
+    display: block;
+}
+#recallbar .left-recall-menu {
+    float: left;
+    margin: 0 0 0 60px;
+	padding: 0;
+}
+#recallbar .right-recall-menu {
+    float: right;
+    margin: 0;
+}
+#recallbar li a,
+#recallbar .recallbar .sub-menu li a {
+    color: #fff !important;
+    margin: 0 2px;
+    padding: 10px 5px;
+    text-decoration: none;
+    display: block;
+}
+#recallbar li a:hover,
+#recallbar .recallbar .sub-menu li a:hover {
+	background: rgba(219, 219, 219, 0.3);
+	color: #fff;
+	text-decoration: none;
+}
+#recallbar .recallbar,
+#recallbar .recallbar ul {
+    margin: 0;
+	padding: 0;
+    overflow: hidden;
+}
+#recallbar .recallbar .sub-menu {
+    background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: unset;
+}
+#recallbar .recallbar .sub-menu li {
+    float: none;
+    padding: 0;
+}
+
+#recallbar .recallbar li:hover > .sub-menu,
+#recallbar .recallbar li .sub-menu:hover{
+	display:block;
+}
+/* коррекция к теме Start */
+#recallbar .current-menu-item > a {
+	background: unset;
+}
+#recallbar .current-menu-item > a::after {
+    height: 0;
+}
+#recallbar .menu-item-has-children > a::after {
+    content: "";
+}
+/* коррекция к теме End */
+
+
+
+
+
+@media screen and (max-width:720px) {
+	#recallbar .left-recall-menu {
+		margin: 0 0 0 15px;
+	}
+	#recallbar li a {
+		padding: 5px 8px;
+	}
+	#recallbar a i.fa {
+		display: list-item;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:585px) {
+	#recallbar .left-recall-menu {
+		margin: 0 0 0 2px;
+	}
+	#recallbar li a {
+		padding: 5px 3px;
+	}
+	#recallbar a span {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width:445px) {
+	#recallbar a span {
+		display: none;
+	}
+	#recallbar a i.fa {
+		font-size: 22px;
+		padding: 0 5px 0 10px;
+	}
+}
+/* Реколлбар End */
